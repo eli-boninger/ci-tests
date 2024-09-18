@@ -25,10 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       
-      - uses: actions/setup-node@v4.0.3
-
-      # Runs a set of commands using the runners shell
-      - name: Vitest
-        run: |
-          npm i,
-          npm run test
+      - uses: alleyinteractive/action-test-node@v1.0.1
+        with:
+          build-skip: true
