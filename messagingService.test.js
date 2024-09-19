@@ -1,7 +1,17 @@
-import { expect, test } from 'vitest';
+import { test, expect, assert, it, describe } from "vitest";
+import { sum } from "./sum";
 
-const sum = (a, b) => a + b;
+describe('sum function', () => {
+    it('called with 0 and 1 is equal to 1', () => {
+        expect(sum(0, 1)).toBe(1);
+    });
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
+    it('called with 0 and -1 is equal to -1', () => {
+        expect(sum(0, -1)).toBe(-1);
+    });
 });
+
+
+
+// *.test.js or *.spec.js
+// *.test.jsx or *.spec.jsx
