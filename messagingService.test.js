@@ -14,7 +14,7 @@ vi.mock('axios', () => ({
 
 describe('sum function', () => {
     it('called with 0 and 1 is equal to 1', () => {
-        expect(sum(0, 1)).toBe(2);
+        expect(sum(0, 1)).toBe(1);
     });
 
     it('called with 0 and -1 is equal to -1', () => {
